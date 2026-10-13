@@ -27,7 +27,8 @@
     "@sandbox-benchmarks/novita": "workspace:*",
     "@sandbox-benchmarks/runcloud": "workspace:*",
     "@sandbox-benchmarks/tama": "workspace:*",
-    "@sandbox-benchmarks/vercel": "workspace:*"
+    "@sandbox-benchmarks/vercel": "workspace:*",
+    "@sandbox-benchmarks/workpaper": "workspace:*"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",

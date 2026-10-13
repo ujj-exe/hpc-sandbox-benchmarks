@@ -165,6 +165,7 @@
         "@sandbox-benchmarks/runcloud": "workspace:*",
         "@sandbox-benchmarks/tama": "workspace:*",
         "@sandbox-benchmarks/vercel": "workspace:*",
+        "@sandbox-benchmarks/workpaper": "workspace:*",
       },
       "devDependencies": {
         "@repo/tsconfig": "workspace:*",
@@ -404,6 +405,21 @@
         "typescript": "catalog:",
       },
     },
+    "packages/workpaper": {
+      "name": "@sandbox-benchmarks/workpaper",
+      "version": "0.0.0",
+      "dependencies": {
+        "@sandbox-benchmarks/driver": "workspace:*",
+        "@sandbox-benchmarks/schema": "workspace:*",
+        "arktype": "catalog:",
+        "workpaper": "catalog:computesdk",
+      },
+      "devDependencies": {
+        "@repo/tsconfig": "workspace:*",
+        "@types/bun": "catalog:",
+        "typescript": "catalog:",
+      },
+    },
     "tooling/repo-checks": {
       "name": "@repo/repo-checks",
       "version": "0.0.0",
@@ -460,6 +476,7 @@
       "modal": "0.9.0",
       "nice-grpc": "2.1.16",
       "novita-sandbox": "2.0.6",
+      "workpaper": "0.2.1",
     },
     "xml": {
       "@nodable/compact-builder": "1.0.9",
@@ -1018,6 +1035,8 @@
     "@sandbox-benchmarks/templates": ["@sandbox-benchmarks/templates@workspace:packages/templates"],
 
     "@sandbox-benchmarks/vercel": ["@sandbox-benchmarks/vercel@workspace:packages/vercel"],
+
+    "@sandbox-benchmarks/workpaper": ["@sandbox-benchmarks/workpaper@workspace:packages/workpaper"],
 
     "@sinclair/typebox": ["@sinclair/typebox@0.25.24", "", {}, "sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ=="],
 
@@ -1898,6 +1917,8 @@
     "whatwg-url": ["whatwg-url@5.0.0", "", { "dependencies": { "tr46": "~0.0.3", "webidl-conversions": "^3.0.0" } }, "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw=="],
 
     "which": ["which@2.0.2", "", { "dependencies": { "isexe": "^2.0.0" }, "bin": { "node-which": "./bin/node-which" } }, "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA=="],
+
+    "workpaper": ["workpaper@0.2.1", "", {}, "sha512-vPTHuAEPdt/t/89zWbQSfWqEQUlCGBHVHa8/TCG6wtFLYTONfosRphdCEJr9VPTJvXu6FKIAPHyjLEgddEio/w=="],
 
     "wrap-ansi": ["wrap-ansi@7.0.0", "", { "dependencies": { "ansi-styles": "^4.0.0", "string-width": "^4.1.0", "strip-ansi": "^6.0.0" } }, "sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q=="],
 

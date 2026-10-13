@@ -16,6 +16,7 @@ import novita from "./novita.ts";
 import runcloud from "./runcloud.ts";
 import tama from "./tama.ts";
 import vercel from "./vercel.ts";
+import workpaper from "./workpaper.ts";
 
 const MODULES = {
 	e2b: e2b,
@@ -33,6 +34,7 @@ const MODULES = {
 	boat: boat,
 	freestyle: freestyle,
 	brezel: brezel,
+	workpaper: workpaper,
 } as const satisfies { [P in ProviderId]: ProviderMetaModule<P> };
 
 export const REGISTRY = {
@@ -51,6 +53,7 @@ export const REGISTRY = {
 	boat: MODULES.boat.meta,
 	freestyle: MODULES.freestyle.meta,
 	brezel: MODULES.brezel.meta,
+	workpaper: MODULES.workpaper.meta,
 } as const satisfies Record<ProviderId, ProviderMetaSource>;
 
 type IdsWithArtifact<K extends ProviderArtifact["kind"]> = {

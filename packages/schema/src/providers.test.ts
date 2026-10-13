@@ -79,6 +79,7 @@ describe("@sandbox-benchmarks/schema providers", () => {
 			"runcloud",
 			"tama",
 			"vercel",
+			"workpaper",
 		]);
 	});
 
